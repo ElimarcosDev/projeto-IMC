@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/*
+    #6A007A
+    #
+    
+    
+
+*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color:#6F257A ;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+#imc{
+    position: absolute;
+    background-color: beige;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: 0px 0px 0px rgba(0, 0, 0, 0.402);
+    
+    transition: width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+}
+#imagem{
+    background-color: #DE34BF;
+    background-image: url('../imagens/pexels-pixabay-270366.jpg');
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    
+}
+#form{
+    padding: 10px;
+    display: block;
+}
+div#form > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#form > p{
+    font-size: 0.8em;
+}
+
+form > input[type=button]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #84548c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+
+}
+
+form > input[type=button]:hover{
+    cursor: pointer;
+    background-color: #482e4d;
+}
+
+
+/*
+.campo{
+    background-color:#6F257A ;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+*/
+div.campo > label{
+    display: none;
+}
+.campo > i{
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+#containerimc{
+    display: none;
+}

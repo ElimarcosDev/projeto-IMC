@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+</head>
+<body>
+    <main>
+        <h1>Calculo do imc</h1>
+        <section id="imc">
+
+            <div id="imagem">
+                
+            </div>
+
+            <div id="form">
+                <h1>IMC</h1>
+                <p>Preencha as informaçoes abaixo</p>
+
+                <form action="login.js" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input maxlength="30" required type="number" name="peso" id="peso" placeholder="Seu peso">
+                        <label for="peso">Usuario</label>
+                    </div>
+
+                    <div class="campo">
+                        <i class="material-icons">settings_accessibility</i>
+                        <input required minlength="8" maxlength="20" type="number" name="altura" id="altura" placeholder="Sua altura">
+                        <label for="altura">Senha</label>
+                    </div>
+                    <input onclick="clique()" type="button" value="Entrar">
+                    
+                </form>
+            </div>
+            
+            <div id="containerimc">
+                <h1 id="resuimc">Seu IMC é </h1>
+                <h2 id="resultado"></h2>
+            </div>
+
+        </section>
+    </main>
+    <script src="script/code.js"></script>
+    
+</body>
+</html>
