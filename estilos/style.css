@@ -26,6 +26,7 @@ main{
     width: 100vw;
     position: relative;
 }
+
 #imc{
     position: absolute;
     background-color: beige;
@@ -37,33 +38,34 @@ main{
     transform: translate(-50%, -50%);
     overflow: hidden;
     background-color: 0px 0px 0px rgba(0, 0, 0, 0.402);
+    text-align: center;
     
     transition: width 0.5s, height 0.5s;
     transition-timing-function: ease;
 }
-#imagem{
-    background-color: #DE34BF;
-    background-image: url('../imagens/pexels-pixabay-270366.jpg');
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    
-}
+
 #form{
     padding: 10px;
     display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    text-align: center;
 }
 div#form > h1{
     text-align: center;
     margin-bottom: 10px;
+    font-size: 4.0em;
 }
 
 div#form > p{
-    font-size: 0.8em;
+    font-size: 1.5em;
 }
-
-form > input[type=button]{
+.materials-icons{
+    
+}
+.campo > input[type=button]{
     display: block;
     font-size: 1em;
     width: 100%;
@@ -72,31 +74,43 @@ form > input[type=button]{
     color: white;
     border: none;
     border-radius: 6px;
-
+    margin: 10px;
+    margin-top: 50px;
 }
 
-form > input[type=button]:hover{
+.campo > input[type=button]:hover{
     cursor: pointer;
     background-color: #482e4d;
+    
 }
 
 
-/*
+
 .campo{
-    background-color:#6F257A ;
-    height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
+    margin: 10px;
+    margin-right: 7vh;
 }
-*/
+
 div.campo > label{
     display: none;
 }
 .campo > i{
-    font-size: 2em;
+    font-size: 2.6em;
     width: 40px;
     padding: 5px;
 }
 #containerimc{
+    margin-top: 20px;
     display: none;
+}
+input{
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 20px;
+    font-size: 1.3em;
+}
+#aviso{
+    margin-top: 465px;
+    color: rgb(255, 0, 0);
 }

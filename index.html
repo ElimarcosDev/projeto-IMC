@@ -11,12 +11,10 @@
 </head>
 <body>
     <main>
-        <h1>Calculo do imc</h1>
+        
         <section id="imc">
 
-            <div id="imagem">
-                
-            </div>
+            
 
             <div id="form">
                 <h1>IMC</h1>
@@ -33,16 +31,19 @@
                         <i class="material-icons">settings_accessibility</i>
                         <input required minlength="8" maxlength="20" type="number" name="altura" id="altura" placeholder="Sua altura">
                         <label for="altura">Senha</label>
+                        <input onclick="clique()" type="button" value="Calcular">
                     </div>
-                    <input onclick="clique()" type="button" value="Entrar">
                     
+
+                    <div id="containerimc">
+                <h1 id="resuimc">Seu IMC é </h1>
+                
+                <h2 id="resultado"></h2>
+            </div>
                 </form>
             </div>
             
-            <div id="containerimc">
-                <h1 id="resuimc">Seu IMC é </h1>
-                <h2 id="resultado"></h2>
-            </div>
+            <p id="aviso"><strong>* Cálculos válidos apenas para pessoas adultas.</strong></p>
 
         </section>
     </main>
