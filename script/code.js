@@ -26,5 +26,9 @@ function clique(){
     else if (imc > 40){
         resuimc.innerHTML = `Seu IMC é ${imc.toFixed(1)} <Br> Você esta com obesidade grau III (mórbida)!`
     }
+
+    if( peso == 0 || altura == 0){
+        alert("PREENCHA TODOS OS DADOS")
+    }
     
 }
