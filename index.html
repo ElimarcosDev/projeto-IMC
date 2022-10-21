@@ -23,16 +23,17 @@
                 <form action="login.js" method="post" autocomplete="on">
                     <div class="campo">
                         <i class="material-icons">person</i>
-                        <input maxlength="30" required type="number" name="peso" id="peso" placeholder="Seu peso">
+                        <input maxlength="30" required type="number" name="peso" id="peso" placeholder="Seu peso(kg)">
                         <label for="peso">Usuario</label>
                     </div>
 
                     <div class="campo">
                         <i class="material-icons">settings_accessibility</i>
-                        <input required minlength="8" maxlength="20" type="number" name="altura" id="altura" placeholder="Sua altura">
+                        <input required minlength="8" maxlength="20" type="number" name="altura" id="altura" placeholder="Sua altura(cm)">
                         <label for="altura">Senha</label>
                         <input onclick="clique()" type="button" value="Calcular">
                     </div>
+                    
                     
 
                     <div id="containerimc">
@@ -43,7 +44,8 @@
                 </form>
             </div>
             
-            <p id="aviso"><strong>* Cálculos válidos apenas para pessoas adultas.</strong></p>
+            <p class="aviso"><strong>* Cálculos válidos apenas para pessoas adultas.</strong></p>
+            
 
         </section>
     </main>

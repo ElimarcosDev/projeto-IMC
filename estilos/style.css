@@ -16,7 +16,7 @@
 }
 
 body, html{
-    background-color:#6F257A ;
+    background-image: linear-gradient(to bottom, #6F257A, #3d1544);
     height: 100vh;
     width: 100vw;
 }
@@ -29,7 +29,7 @@ main{
 
 #imc{
     position: absolute;
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     width: 250px;
     height: 500px;
     border-radius: 20px;
@@ -97,6 +97,7 @@ div.campo > label{
     width: 40px;
     padding: 5px;
 }
+
 #containerimc{
     margin-top: 20px;
     display: none;
@@ -108,7 +109,7 @@ input{
     margin-left: 20px;
     font-size: 1.3em;
 }
-#aviso{
+.aviso{
     margin-top: 465px;
     color: rgb(255, 0, 0);
 }

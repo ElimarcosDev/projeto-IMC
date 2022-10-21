@@ -1,42 +1,47 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (max-width: 768px) {
     #imc{
-        width: 80vw;
+        width: 100vw;
+        position: relative;
+    }
+    
+    div#form > h1{
+        font-size: 4em;
 
     }
-    section#imc > div#imagem{
-        float: left;
-        width: 30%;
-        height: 100%;
-        background-position: right bottom;
-    }
     section#imc > div#form{
-        float: right;
-        width: 70%;
+        
+        width: 100vh;
     }
     body{
-        background-image: linear-gradient(to top, #290d2d, #a535b6);
+        background-color:#290d2d
+    }
+    .campo > input[type=button]{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 250%);
+        width: 200px;
+    }
+    #containerimc{
+        margin-bottom: 200px;
+        
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
     #imc{
         width: 950px;
 
     }
-    section#imc > div#imagem{
-        float: left;
-        width: 50%;
-        height: 100%;
-        background-position: right bottom;
-    }
+   
     section#imc > div#form{
         float: right;
         width: 50%;
     }
     body{
-        background-image: linear-gradient(to top, #290d2d, #a535b6);
+        background-color: aqua;
     }
     div#form > h1{
         font-size: 2em;
@@ -46,4 +51,5 @@
     div#form > p{
         font-size: 1.2emem;
     }
+
 }
