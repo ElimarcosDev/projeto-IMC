@@ -10,12 +10,16 @@
         font-size: 4em;
 
     }
+    div#form > p{
+        font-size: 1.3em;
+
+    }
     section#imc > div#form{
         
         width: 100vh;
     }
     body{
-        background-color:#290d2d
+        background-color:#2d0d0d
     }
     .campo > input[type=button]{
         position: absolute;
@@ -28,6 +32,12 @@
         margin-bottom: 200px;
         
     }
+    input{
+        width: 200px;
+        font-size: 1.2em;
+    }
+
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -40,16 +50,19 @@
         float: right;
         width: 50%;
     }
-    body{
-        background-color: aqua;
-    }
-    div#form > h1{
-        font-size: 2em;
-
-    }
+    
+    
     
     div#form > p{
-        font-size: 1.2emem;
+        font-size: 1.2em;
+    }
+    #reset{
+        width: 200px;
+        margin-left: 180px;
+        
+    }
+    #reset:hover{
+        background-color: rgb(92, 177, 149);
     }
 
 }

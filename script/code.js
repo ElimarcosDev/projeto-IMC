@@ -5,8 +5,15 @@ function clique(){
     var resultado = document.getElementById('resultado')
     var containerimc = document.getElementById('containerimc')
     var imc = Number (peso) / ( Number (altura) * Number (altura));
-    
-    containerimc.style.display = 'block'
+    var resetbut = document.getElementById('reset')
+
+
+    if( peso == 0 || altura == 0){
+        alert("PREENCHA TODOS OS DADOS")
+    }
+    else{
+        resetbut.style.display = 'inline'  
+        containerimc.style.display = 'block'
     if (imc < 18.5){
         resuimc.innerHTML = `Seu IMC é ${imc.toFixed(1)} <Br> Você esta abaixo do peso!`
     
@@ -26,9 +33,12 @@ function clique(){
     else if (imc > 40){
         resuimc.innerHTML = `Seu IMC é ${imc.toFixed(1)} <Br> Você esta com obesidade grau III (mórbida)!`
     }
-
-    if( peso == 0 || altura == 0){
-        alert("PREENCHA TODOS OS DADOS")
     }
+
+
     
+    
+}
+function resetpage(){
+    window.location.reload();
 }
